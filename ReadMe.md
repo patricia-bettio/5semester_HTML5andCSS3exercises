@@ -30,3 +30,7 @@ Create  a webpage  with  information  about  William  Shakespearewith  HTML5  an
 - Use Sass in the KEA Restaurant website.
 - Use Sass in the William Shakespeare Grid website.
 In both cases, try to use as many elements of Sass as possible, as long as they contribute anything positive.
+
+4 - BOOTSTRAP
+- Use Bootstrap in the KEA Restaurant website, sothat all other CSS code is removed.
+- Use Bootstrap in the William Shakespeare CSSwebsite, so that all other CSS code is removed.
