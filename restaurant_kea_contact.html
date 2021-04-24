@@ -27,32 +27,30 @@
                 <img src="/images/map.jpg" alt="" class="mapImage">
             </div>
             <p class="addressLine">Lygten 37<br>2400 Copenhagen</p>
-            <p class="phoneNumber">Phone no.: <b><a href="tel:+4520825370"></a>20 82 53 70</b></p>
+            <p class="phoneNumber">Phone no.: <b><a href="tel:+4520825370">20 82 53 70</a></b></p>
         </div>
 
-        <form action="" id="contactForm" method="POST">
+        <form action="/form.php" id="contactForm" method="POST">
             <fieldset>
             <legend>Contact form:</legend>
             
             <label for="fname">Full name</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
+            <input type="text" name="fname" pattern="[a-zA-Z-]{6,30}"><br>
             
             <label for="phone">Phone no.</label><br>
-
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+            <input type="tel" name="phone" pattern="[0-9]{8}"><br>
             
-            <label for="Email">Email</label><br>
-            <input type="text" id="Email" name="Email" value="Doe"><br>
+            <label for="email">Email</label><br>
+            <input type="text" name="email" pattern="[a-z0-9_-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br>
             
-            <label for="Persons">Persons</label><br>
-            <input type="text" id="Persons" name="Persons" value="Doe"><br>
+            <label for="persons">Persons</label><br>
+            <input type="number" name="persons" min="1" max="20"><br>
             
             <label for="datetime-local">Date and time</label><br>
-            <input id="datetime-local" type="datetime-local" name="datetime-local" value="2021-15-03T08:30"><br>
+            <input type="datetime-local" name="datetime-local" value="2021-15-03T08:30"><br>
 
-            <label for="Further">Further information</label><br>
-            <textarea rows="4"  name="Further" form="contactForm"></textarea><br>
-            
+            <label for="further">Further information</label><br>
+            <textarea rows="4"  name="further" form="contactForm"></textarea><br>
             
             <input type="submit" value="Send"><br>
             </fieldset>
