@@ -22,6 +22,6 @@ All links should slightly increment the size of the text when hovered over.Regar
 2 - HTML5 and CSS3 Exercise - William Shakespeare
 
 Create  a webpage  with  information  about  William  Shakespearewith  HTML5  and CSS3using  a  mobile-first approach. The same page will be implemented in three different ways:
-    - With CSS and media queries, but without Flexbox or Grid
-    - With Flexboxand no media queries
-    - With Grid (media queries are optional)The website will looklike thison a wideviewport:
+- With CSS and media queries, but without Flexbox or Grid
+- With Flexboxand no media queries
+- With Grid (media queries are optional)The website will looklike thison a wideviewport:
