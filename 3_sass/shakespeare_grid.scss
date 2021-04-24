@@ -1,0 +1,101 @@
+$colorMain: white;
+$colorDarkPink: #842c63;
+$colorLightPink: #e392bc;
+
+$fontMain: Verdana, Tahoma, sans-serif;
+
+$space-none: 0;
+$space-small: 10px;
+
+body {
+    margin: $space-none;
+    font-family: $fontMain;
+    position: relative;
+    height: 100%;
+}
+h1{
+    color: $colorMain;
+    background-color: $colorDarkPink;
+    margin: $space-none;
+    padding: $space-small;
+}
+.topnav {
+    overflow: hidden;
+    background-color: $colorLightPink;
+    max-height: 200px;
+    a {
+        display: block;
+        color: $colorDarkPink;
+        text-align: center;
+        padding: $space-small 12px;
+        text-decoration: none;
+        font-size: 17px;
+        font-weight: bold;
+        border: 0.5px solid;
+    }
+    a:hover {
+        color: $colorLightPink;
+        background-color: $colorDarkPink;
+    }
+}
+#topArea{
+    position: sticky;
+    top: $space-none;
+    width: 100%;
+}
+.mainContent{
+    margin: $space-small;
+}
+.snippet{
+    color: $colorMain;
+    background-color: #b46494;
+    padding: 20px;
+    border-radius: 15px;
+}
+footer{
+    background-color:$colorDarkPink;
+    padding: $space-small $space-none;
+    text-align: center;
+    bottom: $space-none;
+    width: 100%;
+}
+footer p {
+    color: $colorMain;
+}
+
+@media only screen
+and (min-device-width: 768px) 
+and (max-device-width: 1024px)  {
+    /* Tablets */
+    .topnav{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .columnOne{
+        float: left;
+        width: 50%;  
+    }
+    .columnTwo{
+        float: right;
+        width: 50%;
+    }
+}
+
+  @media only screen 
+  and (min-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    /* Desktop */
+    .topnav a {
+        float: left;
+        border: $space-none;
+    }
+    .mainContent{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        justify-items: center;
+    }
+    .snippet{
+        max-width: 400px;
+        height: fit-content;
+    }
+}

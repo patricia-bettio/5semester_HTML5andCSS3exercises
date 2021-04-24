@@ -25,3 +25,8 @@ Create  a webpage  with  information  about  William  Shakespearewith  HTML5  an
 - With CSS and media queries, but without Flexbox or Grid
 - With Flexboxand no media queries
 - With Grid (media queries are optional)The website will looklike thison a wideviewport:
+
+3 - SASS
+- Use Sass in the KEA Restaurant website.
+- Use Sass in the William Shakespeare Grid website.
+In both cases, try to use as many elements of Sass as possible, as long as they contribute anything positive.
